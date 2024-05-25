@@ -1,11 +1,16 @@
-import { Fira_Code as FontMono, Inter as FontSans } from "next/font/google";
+import { Inter, Lexend_Deca, Atkinson_Hyperlegible } from "next/font/google";
 
-export const fontSans = FontSans({
-  subsets: ["latin"],
-  variable: "--font-sans",
+export const fontLexend = Lexend_Deca({
+	subsets: ["latin"],
+	variable: "--font-lexend",
 });
 
-export const fontMono = FontMono({
-  subsets: ["latin"],
-  variable: "--font-mono",
+export const fontInter = Inter({
+	subsets: ["latin"],
+	variable: "--font-inter",
+});
+
+export const fontAtkinson = Inter({
+	subsets: ["latin"],
+	variable: "--font-atkinson",
 });
