@@ -8,7 +8,7 @@ import {
 	Button,
 } from "@nextui-org/react";
 
-const NavBar = async () => {
+const NavBar = () => {
 	return (
 		<Navbar>
 			<NavbarBrand>
