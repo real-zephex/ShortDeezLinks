@@ -1,24 +1,11 @@
 import "@/styles/globals.css";
-import { Metadata, Viewport } from "next";
-import { Link } from "@nextui-org/link";
+import { Viewport } from "next";
 import clsx from "clsx";
 
 import { Providers } from "./providers";
 
-import { siteConfig } from "@/config/site";
 import { fontLexend } from "@/config/fonts";
 import NavBar from "@/components/navbar";
-
-export const metadata: Metadata = {
-	title: {
-		default: siteConfig.name,
-		template: `%s - ${siteConfig.name}`,
-	},
-	description: siteConfig.description,
-	icons: {
-		icon: "/favicon.ico",
-	},
-};
 
 export const viewport: Viewport = {
 	themeColor: [
