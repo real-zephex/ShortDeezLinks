@@ -8,9 +8,11 @@ import {
 	Button,
 } from "@nextui-org/react";
 
+import { fontLexend } from "@/config/fonts";
+
 const NavBar = () => {
 	return (
-		<Navbar>
+		<Navbar className={fontLexend.className}>
 			<NavbarBrand>
 				<p className="font-bold text-2xl">ShortDeezLinks</p>
 			</NavbarBrand>

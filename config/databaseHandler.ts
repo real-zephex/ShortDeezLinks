@@ -10,7 +10,7 @@ export const ExistsOrNot = async (url: string) => {
 		const code = generateRandomCode();
 		await ADD_DATA(url, code);
 		return code;
-	} else {
+	} else if (results) {
 		return results;
 	}
 };
