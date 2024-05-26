@@ -1,53 +1,18 @@
-# Next.js & NextUI Template
+# ShortDeezLinks
+A simple link shortener built using the Next.js framework, Next UI components, TypeScript, and SQLite.
 
-This is a template for creating applications using Next.js 14 (app directory) and NextUI (v2).
+### Description
+This is my first attempt at creating a link shortener, done entirely without any external help. I acknowledge that my approach might not be perfect and could potentially have flaws, but it works!
 
-[Try it on CodeSandbox](https://githubbox.com/nextui-org/next-app-template)
+### How it works
+1. The user inputs a `URL` they want to shorten. This `URL` is validated against a regular expression to ensure it is in a correct format.
+2. The application checks the database to see if a short link for this `URL` already exists. If it does, the existing short link is returned to the user. If not, a new entry is created in the database with the original `URL` and the generated short code.
+3. When someone visits the shortened link, the application queries the database for the original `URL`. If found, the user is redirected to that `URL`; if not, the user is notified that the code is invalid.
 
-## Technologies Used
+## Deployments
+A public version is deployed on Render, which you can access here: [ShortDeezLinks - Render](https://shortdeezlinks-gk72.onrender.com/ "ShortDeezLinks - Render")
 
-- [Next.js 14](https://nextjs.org/docs/getting-started)
-- [NextUI v2](https://nextui.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Tailwind Variants](https://tailwind-variants.org)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Framer Motion](https://www.framer.com/motion/)
-- [next-themes](https://github.com/pacocoursey/next-themes)
+You can also self-host it on your local machines or any similar platform.
 
-## How to Use
-
-### Use the template with create-next-app
-
-To create a new project based on this template using `create-next-app`, run the following command:
-
-```bash
-npx create-next-app -e https://github.com/nextui-org/next-app-template
-```
-
-### Install dependencies
-
-You can use one of them `npm`, `yarn`, `pnpm`, `bun`, Example using `npm`:
-
-```bash
-npm install
-```
-
-### Run the development server
-
-```bash
-npm run dev
-```
-
-### Setup pnpm (optional)
-
-If you are using `pnpm`, you need to add the following code to your `.npmrc` file:
-
-```bash
-public-hoist-pattern[]=*@nextui-org/*
-```
-
-After modifying the `.npmrc` file, you need to run `pnpm install` again to ensure that the dependencies are installed correctly.
-
-## License
-
-Licensed under the [MIT license](https://github.com/nextui-org/next-app-template/blob/main/LICENSE).
+## Contributions
+Feel free to contribute!
