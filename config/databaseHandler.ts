@@ -9,8 +9,9 @@ export const ExistsOrNot = async (url: string) => {
 	if (!results) {
 		const code = generateRandomCode();
 		await ADD_DATA(url, code);
-		return code;
-	} else if (results) {
+		const newResults = await QUERY_BY_LINK(url);
+		return newResults ? newResults : code;
+	} else {
 		return results;
 	}
 };

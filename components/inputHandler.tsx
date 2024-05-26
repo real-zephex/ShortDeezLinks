@@ -53,7 +53,7 @@ const InputBox = () => {
 			<Input
 				type="text"
 				label="Parent URL"
-				placeholder="Enter your url (2 enter presses required - bug)"
+				placeholder="Enter your url"
 				autoComplete="url"
 				onChange={(event) => {
 					if (event.target.value.trim() !== "") {
